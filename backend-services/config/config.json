@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "root",
+      "password": "root",
+      "database": "deals",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "root",
+      "database": "deals",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "jovialize",
+      "password": "Kakinada@2024",
+      "database": "jovialize",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    }
+  }
+  

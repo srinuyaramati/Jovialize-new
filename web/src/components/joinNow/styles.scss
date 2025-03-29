@@ -1,0 +1,83 @@
+@import '../../assets/styles/scss/main';
+
+.mail-container {
+    background-color: #3adeff;
+    padding: 1% 0;
+    // margin-bottom: 30px;
+    
+    form {
+      position: relative;      
+
+      input {
+        width: 85%;
+        padding: 15px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        &:focus {
+          box-shadow: none ;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15%;
+        height: 54px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: right;
+        
+      }
+    }
+
+    .arrow-btn {
+      border: 0;
+      background-color: $text-white;
+    }
+    
+    .join-mail-input {
+      img {
+        background-color: $text-white;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+      .fa-circle-arrow-right {
+        margin-top: 4px;
+        margin-right: 5px;
+      }
+    }
+
+    .left{
+        h5{
+            // font-family: Montserrat;
+            font-size: 1.1rem;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: $dark-black;
+            
+        }
+        span{
+            margin: 12px 0 0;
+            opacity: 0.8;
+            // font-family: Montserrat;
+            font-size: .85rem;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: $dark-black;
+          
+        }
+    }
+    @media only screen and (max-width: 575px) { 
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+}

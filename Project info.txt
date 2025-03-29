@@ -1,0 +1,20 @@
+jovialize hosting info:
+-----------------------
+godaddy login details:
+	customer id: 129207478
+	password: Kakinada@2024
+DB username & password in cpanel
+Database: jovialize
+DB user name: jovialize
+DB password: ZOS5_N8,##]O
+
+cpanel login:
+-------------
+username: noseg5jgvuts
+password: j%%OWlmT%L1B
+
+port: 22
+
+IP address
+160.153.133.168
+
