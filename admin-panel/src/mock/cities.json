@@ -1,0 +1,23 @@
+[
+    {
+        "cityId": 1,
+        "cityName": "Bangalore",
+        "status": "Active",
+        "createdAt": "2024-04-18T18:30:00.000Z",
+        "updatedAt": "2024-04-19T10:59:41.000Z"
+    },
+    {
+        "cityId": 3,
+        "cityName": "Hyderabad",
+        "status": "Active",
+        "createdAt": "2024-04-18T18:30:00.000Z",
+        "updatedAt": "2024-04-19T09:41:37.000Z"
+    },
+    {
+        "cityId": 4,
+        "cityName": "Chennai",
+        "status": "Active",
+        "createdAt": "2024-04-18T18:30:00.000Z",
+        "updatedAt": "2024-04-20T12:37:55.000Z"
+    }
+]

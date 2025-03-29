@@ -1,0 +1,639 @@
+{
+	"info": {
+		"_postman_id": "99e179c0-0c67-4ed7-9017-11121b476443",
+		"name": "Deals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1510049"
+	},
+	"item": [
+		{
+			"name": "Deals",
+			"item": [
+				{
+					"name": "Get Deals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/deals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Deal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"£109—Leicestershire retreat w/meals & spa access, 50% off\",\r\n    \"shortDescription\": \"Travelzoo members who have stayed at Sketchley Grange Hotel & Spa say it's a 'gem' with 'delicious food' and 'lovely staff'. A country house hotel in Leicestershire, suite stays here are up to 50% off. You'll get breakfast, dining credit, prosecco, and access to the spa and leisure club.\",\r\n    \"longDescription\": \"<ul><li>Valid Monday-Friday until 30 September, 2024. Saturdays are an extra £30,payable direct to the hotel</li><li>It's £99 to stay Sundays from July-September</li><li>Overnight accommodation in a Contemporary Junior Suite, with full English breakfast, for two</li><li>£25-per-person credit towards dinner</li><li>A bottle of prosecco on arrival (worth £36)</li><li>Late checkout until 1pm (worth £20)</li><li>Full use of the spa and leisure facilities (supplements apply for treatments)</li></ul>\",\r\n    \"status\": \"Active\",\r\n    \"createdDate\": \"2024-04-15\",\r\n    \"dealPrice\": \"1000\",\r\n    \"activeFrom\": \"2024-04-20\",\r\n    \"activeTo\": \"2024-04-30\",\r\n    \"city\": \"2\",\r\n    \"createdBy\": \"1\",\r\n    \"dealType\": \"1\",\r\n    \"images\": [\r\n                    {\r\n                    \"imageName\": \"Image 1\",\r\n                    \"dealId\": \"1\"\r\n                },\r\n                {\r\n                    \"imageName\": \"Image 2\",\r\n                    \"dealId\": \"1\"\r\n                },\r\n                {\r\n                    \"imageName\": \"Image 3\",\r\n                    \"dealId\": \"1\"\r\n                }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Individual Deal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/deals/All-inc week at new luxury Maldives resort/11",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals",
+								"All-inc week at new luxury Maldives resort",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top 20 Deals",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals/topDeals/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals",
+								"topDeals",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update deal",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"£109—Leicestershire retreat w/meals & spa access, 50% off\",\r\n    \"shortDescription\": \"Travelzoo members who have stayed at Sketchley Grange Hotel & Spa say it's a 'gem' with 'delicious food' and 'lovely staff'. A country house hotel in Leicestershire, suite stays here are up to 50% off. You'll get breakfast, dining credit, prosecco, and access to the spa and leisure club.\",\r\n    \"longDescription\": \"<ul><li>Valid Monday-Friday until 30 September, 2024. Saturdays are an extra £30,payable direct to the hotel</li><li>It's £99 to stay Sundays from July-September</li><li>Overnight accommodation in a Contemporary Junior Suite, with full English breakfast, for two</li><li>£25-per-person credit towards dinner</li><li>A bottle of prosecco on arrival (worth £36)</li><li>Late checkout until 1pm (worth £20)</li><li>Full use of the spa and leisure facilities (supplements apply for treatments)</li></ul>\",\r\n    \"status\": \"Active\",\r\n    \"dealPrice\": \"10000\",\r\n    \"activeFrom\": \"2024-04-25\",\r\n    \"activeTo\": \"2024-04-29\",\r\n    \"city\": \"2\",\r\n    \"createdBy\": \"2\",\r\n    \"dealType\": \"1\",\r\n    \"dealId\": \"1\",\r\n    \"images\": [\r\n                    {\r\n                    \"imageName\": \"Image 1\",\r\n                    \"dealId\": \"1\"\r\n                },\r\n                {\r\n                    \"imageName\": \"Image 2\",\r\n                    \"dealId\": \"1\"\r\n                },\r\n                {\r\n                    \"imageName\": \"Image 3\",\r\n                    \"dealId\": \"1\"\r\n                }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete individual deal",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleId\": 1,\r\n    \"delaId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete multiple deals",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleId\": 1,\r\n    \"dealIds\": [\"6\", \"7\", \"8\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals/deleteMultipleDeals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals",
+								"deleteMultipleDeals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "Get All Cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cities",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create City",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityName\": \"Hyderabad\",\r\n    \"status\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/cities",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Citiy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityName\": \"Bangalore\",\r\n    \"status\": \"Active\",\r\n    \"cityId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/cities",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Individual City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cities/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete City",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cities/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cities",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get All Roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/roles",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/roles",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Role",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleId\": 2,\r\n    \"roleName\": \"App user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/roles",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"gowrisankar.y1@gmail.com\",\r\n    \"password\": \"12345\",\r\n    \"status\": \"Active\",\r\n    \"userRole\": 2,\r\n    \"cityId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Inactive\",\r\n    \"cityId\": \"12\",\r\n    \"userId\": \"1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Individual user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/15",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recently viewed deals",
+			"item": [
+				{
+					"name": "Get Recently Viewed Deals",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals/getRecentlyViewedDeals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals",
+								"getRecentlyViewedDeals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Recently Viewed Deals",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"dealId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/deals/createRecentlyViewedDeals",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"deals",
+								"createRecentlyViewedDeals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

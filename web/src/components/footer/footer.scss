@@ -1,0 +1,86 @@
+@import '../../assets/styles/scss/main';
+
+.footer {
+    background-color: $dark-black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+
+    .left {
+        height: 20px;
+        flex-grow: 0;
+        // margin: 0 418px 0 0;
+        font-size: 16px;
+        //font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $text-white;
+    }
+
+    .right {
+        font-size: 1rem;
+        line-height: normal;
+        font-size: .9rem;
+    }
+
+}
+
+.main-footer {
+    background-color: #191919;
+    color: $footer-text;
+    h5 {
+        color: $text-white;
+    }
+    .footer-title {
+        text-transform: capitalize;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .aboutus {
+        .aboutus-content {
+            font-size: 0.9rem;
+        }
+    }
+    .contactus {
+        .number {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        .contactus-content {
+            font-size: 0.9rem;
+        }
+    }
+    .cities-list {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        @media only screen and (max-width: 575px) { 
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
+    .quick-links {
+        padding-left: 0;
+        li {
+            list-style: none;
+            font-size: 0.9rem;
+            text-decoration: underline;
+            a {
+                color: $footer-text;
+            }
+        }
+        
+    }
+
+    .number {
+        color: $footer-text;
+    }
+}

@@ -1,0 +1,45 @@
+Manin page:
+1. Book best places in is not asked for and need to remove. Instead we need to keep abouts , Careers, Help,Privacy, Terms & Conditions,Site Map
+2. Inactive deals and cities are still appearing in main page. Check armman malik deal in Bangalore section. 
+3. No need to show dates in this page. 
+4. Member registration is not working for emails e.g. tried to register srinu.yaramati@gmail.com and didnt work. Showing something went wrong message. Need a better message.
+5. Images are not standard size and not adjusting to standard sizes. You can look at differences between Marquis deal and others.
+6. Trending - Not all deal sizes are same and not standard. Needs to correct this.
+7. Content paragraphs widths, fonts and order of blockes still needs to be rearranged to make it better.
+8. The overall design is still not looking professional. 
+9. Need design inputs. 
+10. Some times when I clieck on deal its not asking to register and not doing any action and still be on main page only. Its confusing to user why it is not going to deal.
+11. No functionality to change headings colours or forn formating. E.g. In travel zoo rates are showen in Blue and heading will have difference font sizes.
+12. Search deal is showing Travel zoo data. e.g. type p inserch section. Needs cleanup. (For testing only, we can remove it once we deployed to actual domain)
+
+
+Deal page:
+1. Recent deals links are not working
+2. Image sizes are not adjusted to standard size as mentioned below.
+3. No share this deal caption before facebook. Need to remove x and add insta.
+
+4. Heading needs font formating. Its not allowing. e.g. different lines with differnt font sizes. 
+5. Rate is not visible in this page. The blue ciricial in travelzoo site. 
+6. The page format needs correction. Example when you can go, have question etc are messy. Content copy paste from external word processor is not working and need to do formating every time in website with limited fonts etc. I tried this on a Ubuntu machine and need to check with windows and word. 
+7. Recent deals are showing old history even two days back search. Need to make it current session. 
+8. Search all deals, deal name and check availability needs to be fixed on top of the page when user scrolling down for details. Its not working and refer Travel zoo top section. 
+9. Back to search is not available
+10. Nice to add : Looking for something to jovialize your life? We'll email you when new deals are available. 'Set an alert for 'searching city' and use the email logged in. 
+
+Admin module:
+
+1. Dashboard is not reflecting actual data. e.g. it is showing 150 deals and too many user numbers. 
+2. Inactive deals and cities are still appearing in main page. Check armman malik deal in Bangalore section, Vizag1 and Parvathipuram.  
+3. When you can go - needs to text formati with date example Until 30 Dec, 2024. Date pickers are friendly and text might make it easy. We still can keep deal active from and to as is to display on pages.
+4. Change CONTACT NUMBER to Service provider contact number and email also same
+5. I didnt get what is cutomer service available. 
+6. what is the difference between deal price and deal offer price?
+7. Short description should support formating like full description
+8. Full description formating is limited with fonts etc and copy paste from other word processor with formating is not working. Need to test with more tools like Word or PPT. 
+9. mass mail is not working
+10. Not sure why admins are tagged to cities. They should be able to work on all cities and all deals in the system
+11. Not sure about the purpose of role management and functionlities. Nothing available to test. 
+12. You mentioned in your previous updates that entity id is complete but not seen in admin form.
+
+
+

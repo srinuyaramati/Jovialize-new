@@ -1,0 +1,90 @@
+// src/scss/main.scss
+@import '~bootstrap/scss/bootstrap';
+@import './assets/styles/scss/main';
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: $primary-bg !important;
+  // font-family: Montserrat;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app-body {
+  position: initial;
+  &.container-fluid {
+    padding: 0;
+  }
+}
+
+// Mixin itself
+.clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.main-btn {                
+  margin: 14px 28px 0 0;
+  font-size: 16px;
+  // text-align: center;
+  font-weight: bold;
+  line-height: normal;
+  color: #6c2087;
+  text-transform: uppercase;
+
+  a {
+    cursor: pointer;
+    background-color: $primary-btn;
+    padding: 10px;
+    color: $text-white;
+    font-size: .9rem;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    img {
+      width: 20px;
+    }
+    &.text-white {
+      color: $text-white;
+    }
+  }
+}
+
+.error-message {
+  font-size: 14px;
+  margin: 10px 0 0 5px;
+  color: $red;
+  text-align: left !important
+}
+
+.anchor-blue-text {
+  color: blue;
+  cursor: pointer;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+
+.decimal-list-style {
+  list-style: decimal;
+}
+.terms-conditions {
+  ul {    
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}

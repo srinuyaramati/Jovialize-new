@@ -1,0 +1,68 @@
+@import '../../../assets/styles/scss/main';
+
+.deal-popup {
+    border-radius: 0;
+
+    .image-block {
+        img {
+            width: 100%;
+            max-height: 250px;
+            overflow: hidden;
+        }
+    }
+    .popup-content {
+        text-align: center;
+        padding: 30px 40px;
+    }
+    input.form-control {
+        background: #f9f9f9;
+    }
+    .submit-btn {
+        border-radius: 20px;
+        color: $text-white;
+    }
+    .close-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: $text-white;
+        color: #777;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: 2px solid #ccc;
+        &:hover {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+        i {
+            font-size: 1.5em;
+            margin-top: 1px;
+        }
+    }
+
+    form {
+        .invalid-feedback {
+            text-align: left;
+        }
+        .error-message {
+            font-size: 14px;
+            margin: 10px 0 0 5px;
+            color: #e74f4f;
+            text-align: left !important
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .modal-dialog {
+            min-width: 600px !important;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .popup-content {
+            padding: 20px;
+        }
+    }
+}

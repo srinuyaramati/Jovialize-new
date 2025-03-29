@@ -1,0 +1,77 @@
+Deals Todo:
+-----------
+Backend:
+--------
+1. Mass mailing functionality fully not completed
+2. axios loader and axios config file functionality
+3. Deals
+	iv. Success message with redirection
+4. env file setup
+5. update all api methods to try catch method
+6. Add API payload validations using (JOI)
+
+Issues:
+-------
+1. Mail image click, it should navigate to reaspective link
+2. we should not send the error message as it is in backend side
+
+Implementation:
+---------------
+1. Cors implementation in Backend services
+2. add random number to deal image -- Math.floor(Math.random()*90000) + 10000
+
+jovialize hosting info:
+-----------------------
+godaddy login details:
+	customer id: 129207478
+	password: Kakinada@2024
+DB username & password in cpanel
+Database: jovialize
+DB user name: jovialize
+DB password: ZOS5_N8,##]O
+
+cpanel login:
+-------------
+username: noseg5jgvuts
+password: j%%OWlmT%L1B
+
+port: 22
+
+IP address
+160.153.133.168
+
+https://purenimble.com/jovialize/
+
+Username : noseg5jgvuts
+word : lz7Y$TcRxhv0
+
+Customer #: 617474552
+Kakinada@2o24
+
+Admin Username: purenimble
+password: Kakinada@2024
+
+IP address: 92.205.183.4
+username: purenimble
+password: Kakinada@2024
+PIN 8080
+
+
+database User details:
+----------------------
+username: jovialize
+password: Kakinada@2024
+
+
+Username
+purenimble@outlook.com
+
+
+WHM - 
+
+PM2 plus user detials:
+----------------------
+username:purenimble
+email: gowrisankar.yeturi@gmail.com
+password: Kakinada@2024 
+Aplication URL: https://app.pm2.io/#/bucket/66c050c9eb1ec919bf0a6d85

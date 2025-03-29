@@ -1,0 +1,67 @@
+@import '../../assets/styles/scss/main';
+
+.search-bar {
+    padding: 10px;
+    width: 90%;
+    border: solid 1px $dark-black;
+    background-color: $text-white;
+    margin: 2% auto;
+    border-radius: 10px;
+
+    &.header {
+        margin: 2% auto;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-bottom: 0;
+        .city-dropdown {
+            height: 40px;
+        }
+        .submit-btn img {
+            width: 30px;
+        }
+        .search-input {
+            font-size: 1rem;
+            margin-top: 2px;
+        }
+    }
+
+    .form-control {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .city-dropdown {
+      margin: 0;
+      height: 40px;
+      .input-group-text, .form-select {
+        background-color: #f2f2f2;
+      }
+      .input-group-text {
+        border: solid 1px #949494;
+        // border-top-left-radius: 0;
+        // border-bottom-left-radius: 0;
+        border-right: 0;
+      }
+      .form-select {
+        border: solid 1px #949494;
+        border-left: 0;
+        // border-top-right-radius: 0;
+        // border-bottom-right-radius: 0;
+      }
+    }
+    .search-input {
+      font-size: 20px;
+      margin-top: 2px;
+      .rbt-input {
+        border: 0;
+      }
+    }
+    .submit-btn {
+      background-color: $text-white;
+      border: 0;
+      img {
+        width: 28px;
+      }
+    }
+  }

@@ -1,0 +1,62 @@
+.form-control {
+    font-size: $font-size-base;
+}
+
+.authentication-panel {
+    padding-top: 3rem;
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
+    
+    .authentication-form {
+        min-height: 335px;
+        padding: 1rem 3rem 3rem 3rem;
+
+        .form-control {
+            border: 1px solid #656565;
+            // margin-bottom: 2rem;
+
+            &::placeholder {
+                color: #a5a5a5;
+              }
+        }
+    }
+    
+}
+
+form {
+    font-size: $font-size-base;
+    label {
+        color: $black-hr !important;
+        
+        &.form-check-label {
+            padding-left: 5px !important;
+        }
+    }
+    .form-check-inline {
+        margin-right: 1.5rem;
+    }
+
+    input[type=file] {
+        height: 50px;
+    }
+
+    &.was-validated :invalid~.invalid-feedback {
+        display: block;
+    }
+}
+
+
+.btn-primary:disabled {
+    .spinner-border {
+        color: $primary-color;
+        width: 1.5rem;
+        height: 1.5rem;
+    } 
+    span {
+        color: $primary-color;
+    }
+}
+
+.form-error-text {
+    font-size: 80%;
+}

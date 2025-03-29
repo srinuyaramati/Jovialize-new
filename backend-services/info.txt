@@ -1,0 +1,2 @@
+local server posrt - http://localhost:6001/
+http://localhost:27017/
